@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mako&display=swap');
+.home{
+    max-width: 1280px;
+    min-width: 250px;
+    width: 1000px;
+    min-height: 500px;
+    height: auto;
+    background-color: #dceede;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.tit-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.tit-con h1{
+    font-size: 150px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Dancing Script';
+    color: #06570f;
+    position: relative;
+}
+.tit-con p{
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+    color: #004b09;
+    font-weight: 500;
+}
+.tit-con span{
+    font-size: 45px;
+    font-family: 'Mako';
+    color: #2e7236;
+    font-weight: 900;
+}
+.btn{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #492bbe;
+    height:40px;
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 12;
+}
+.btn button{
+    height:40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border:3px solid black;
+    background-color: #ff7552;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.7s;
+
+}
+.btn button:hover{
+    background-color: #23933f;
+    color: rgb(0, 0, 0);
+    border:3px solid rgb(255, 255, 255);
+
+}
+
+.home{
+    position: relative;
+  }
+  
+.home::before{
+    content: '';
+    height: 500px;
+    width: 480px;
+    background-image: url('images/nature.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size:500px;
+    position: absolute;
+    left: -150px;
+    bottom: 60px;
+  }
+  .home::after{
+    content: '';
+    height: 500px;
+    width: 480px;
+    background-image: url('images/nature.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size:500px;
+    position: absolute;
+    background-position-y: bottom;
+    background-position-x: left;
+    transform: rotate(-170deg);
+    left: 700px;
+    top: 60px;
+}
+
+
+
+
+
+
+  @media screen and (max-width:1500px) {
+    
+    .home::after{
+        height: 480px;
+        width: 490px;
+        background-size:500px;
+        left: 600px;
+        top: 80px;
+    
+    }
+
+  }
+
+  @media screen and (max-width:1270px) {
+    
+    .home::after{
+        height: 400px;
+        width: 400px;
+        background-size:400px;
+        left: 600px;
+        top: 170px;
+    
+    }
+    .home::before{
+        height: 400px;
+        width: 400px;
+        background-size:400px;
+        left: -60px;
+        bottom: 170px;
+        z-index: 12;
+      }
+
+  }
+
+  @media screen and (max-width:1100px) {
+    .home{
+        width: 800px;
+
+    }
+    .home::after{
+        height: 400px;
+        width: 400px;
+        background-size:400px;
+        left:450px;
+        top: 150px;
+    
+    }
+    .home::before{
+        height: 400px;
+        width: 400px;
+        background-size:400px;
+        left: -60px;
+        bottom: 170px;
+        z-index: 12;
+      }
+
+  }
+
+
+  @media screen and (max-width:1010px) {
+    .home::after{
+        height: 350px;
+        width: 350px;
+        background-size:350px;
+        left:480px;
+        top: 180px;
+    }
+    .home::before{
+        height: 350px;
+        width: 350px;
+        background-size:350px;
+        left: -50px;
+        bottom: 170px;
+        z-index: 12;
+      }
+
+  }
+
+  @media screen and (max-width:930px) {
+    .home{
+        width: 700px;
+
+    }
+    .home::after{
+        height: 350px;
+        width: 350px;
+        background-size:350px;
+        left:390px;
+        top: 200px;
+    }
+    .home::before{
+        height: 350px;
+        width: 350px;
+        background-size:350px;
+        left: -70px;
+        bottom: 170px;
+        z-index: 12;
+      }
+
+  }
+
+  @media screen and (max-width:860px) {
+    .home{
+        width: 600px;
+        min-height: 450px;
+
+    }
+    .home::after{
+        height: 350px;
+        width: 350px;
+        background-size:350px;
+        left:300px;
+        top: 170px;
+    }
+    .home::before{
+        height: 350px;
+        width: 350px;
+        background-size:350px;
+        left: -70px;
+        bottom: 160px;
+        z-index: 12;
+      }
+    .tit-con h1{
+        font-size: 100px;   
+    }
+    .tit-con span{
+        font-size: 40px;
+    }
+
+  }
+
+  @media screen and (max-width:780px) {
+    .home::after{
+        height: 300px;
+        width: 300px;
+        background-size:300px;
+        left:330px;
+        top: 210px;
+    }
+    .home::before{
+        height: 300px;
+        width: 300px;
+        background-size:300px;
+        left: -50px;
+        bottom: 160px;
+        z-index: 12;
+      }
+
+  }
+
+
+  @media screen and (max-width:724px) {
+    .home{
+        width: 500px;
+        min-height: 400px;
+
+    }
+    .title{
+        position: relative;
+    }
+    .btn{
+        position: absolute;
+        right: 0px;
+        
+    }
+    
+    .tit-con h1{
+        font-size: 100px;   
+    }
+    .tit-con span{
+        font-size: 40px;
+    }
+    .home::after{
+        height: 300px;
+        width: 300px;
+        background-size:300px;
+        left:250px;
+        top:220px;
+    }
+    .home::before{
+        height: 300px;
+        width: 300px;
+        background-size:300px;
+        left: -50px;
+        bottom: 180px;
+        z-index: 12;
+      }
+
+  }
+
+
+  @media screen and (max-width:670px) {
+    
+    .home::after{
+        height: 250px;
+        width: 250px;
+        background-size:250px;
+        left:280px;
+        top:220px;
+    }
+    .home::before{
+        height: 250px;
+        width: 250px;
+        background-size:250px;
+        left: -50px;
+        bottom: 200px;
+        z-index: 12;
+      }
+    
+
+  }
+
+
+  @media screen and (max-width:610px) {
+    .title{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .btn{
+        position: relative;
+       
+    }
+    .home::after{
+        height: 300px;
+        width: 300px;
+        background-size:300px;
+        left:200px;
+        top:220px;
+    }
+    .home::before{
+        height: 300px;
+        width: 300px;
+        background-size:300px;
+        left: -30px;
+        bottom: 230px;
+        z-index: 12;
+      }
+    .tit-con h1{
+        font-size: 100px;   
+    }
+    .tit-con span{
+        font-size: 30px;
+    }
+
+  }
+
+  
+  @media screen and (max-width:580px) {
+    .title{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .home{
+        background-color: #dceedeb2;
+
+    }
+    .btn{
+        position: relative;
+       
+    }
+    .home::after{
+        display: none;
+    }
+    .home::before{
+        height:500px;
+        width: 500px;
+        background-size:500px;
+        left: 0px;
+        bottom: 0px;
+        z-index: -12;
+      }
+    .tit-con h1{
+        font-size: 100px;   
+    }
+    .tit-con span{
+        font-size: 30px;
+    }
+
+  }
+
+
+  
+  @media screen and (max-width:510px) {
+    .home{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .home::before{
+        height:400px;
+        width: 400px;
+        background-image: url('images/leaf.png');
+        background-size:400px;
+        left: 0px;
+        top: 90px;
+        z-index: -12;
+      }
+    .tit-con h1{
+        font-size: 80px;   
+    }
+    .tit-con span{
+        font-size: 26px;
+    }
+
+  }
+
+  @media screen and (max-width:410px) {
+    .home{
+        width: 400px;
+        height: 100%;
+    }
+
+    .home::before{
+        height:325px;
+        width: 325px;
+        background-image: url('images/leaf.png');
+        background-size:325px;
+        left: 10px;
+        top: 130px;
+        z-index: -12;
+      }
+    .tit-con h1{
+        font-size: 80px;   
+    }
+    .tit-con span{
+        font-size: 26px;
+        color: #06570f;
+
+    }
+
+  }
+  @media screen and (max-width:325px) {
+    .home{
+        width: 400px;
+        height: 100%;
+    }
+
+    .home::before{
+        height:290px;
+        width: 290px;
+        background-image: url('images/leaf.png');
+        background-size:290px;
+        left: 10px;
+        top: 130px;
+        z-index: -12;
+      }
+    .tit-con h1{
+        font-size: 70px;   
+    }
+    .tit-con p{
+        font-size: 15px;
+    }
+    .tit-con span{
+        font-size: 20px;
+    }
+
+  }

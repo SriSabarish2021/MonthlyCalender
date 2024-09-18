@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Mako&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+:root {
+    --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+    --gray: #34495e;
+    --darkgray: #2c3e50;
+  }
+  
+.calen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxer{
+    min-width: 200px;
+    width: 800px;
+    min-height: 450px;
+    height: auto;
+    background: rgb(182,215,182);
+    background: linear-gradient(22deg, rgba(182,215,182,1) 49%, rgba(140,214,161,1) 100%);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.calen{
+    position: relative;
+  }
+  
+.calen::before{
+    content: '';
+    height: 400px;
+    width: 450px;
+    background-image: url('images/tropical-.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position-y: bottom;
+    background-position-x: left;
+    left: 0px;
+    bottom: 0px;
+    z-index: -20;
+
+  }
+  .calen::after{
+    content: '';
+    height: 350px;
+    width: 350px;
+    background-image: url('images/tropical-leaves.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position-y: bottom;
+    background-position-x: left;
+    transform: rotate(-180deg);
+    right: 0px;
+    top: 30px;
+    z-index: -20;
+}
+.input-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.inp{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inp button{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background-color: transparent;
+    z-index: 20;
+    transition-duration: 0.5s;
+}
+.inp button:hover{
+    color: #06570f;
+}
+.inp button:active{
+    color: #ffffff;
+}
+
+.inp select{
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+    font-family:'Nova Round';
+    background-color: #2c3e50;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.inp select:active{
+    outline: none;
+    border: none;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+.dateshere{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+}
+.dayshere{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.dayshere p{
+    font-size: 25px;
+    font-family: 'Sofadi One';
+    font-weight: 500;
+    background-color: rgb(23, 99, 46);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: none;
+}
+
+
+.day,
+.empty{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(87, 87, 87);
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.current{
+    background-color: rgb(26, 103, 38);
+    color: white;
+    font-weight: 800;
+}
+.empty{
+    background-color: #98ca986d;
+    cursor: auto;
+    border: 1px solid rgba(127, 127, 127, 0.493);
+
+}
+.day{
+    font-size: 16px;
+    font-family: 'Playpen Sans';
+    transition-duration: 0.3s;
+}
+.day:hover{
+    background-color: rgb(26, 103, 38);
+    color: aliceblue;
+}
+.top{
+    min-width: 200px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.top-cont{
+    margin-left: 70px;
+    width:450px;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.top-yr{
+    font-size: 68px;
+    font-family: "Fascinate Inline";
+    font-weight: 400;
+    color: rgb(94, 92, 92);
+}
+.top-mon{
+    font-size: 78px;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: 400;
+    color: #06570f;
+}
+
+
+.back-btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color:transparent;
+    border-radius: 50px;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+    border: 2px solid rgb(99, 99, 99);
+    background-color: #000000;
+    margin-top: 10px;
+    transition-duration: 0.5s;
+    color: white;
+    border: none;
+}
+.back-btn:hover{
+    background-color: #7ead77;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width:1024px) {
+    .boxer{
+        min-width: 200px;
+        width: 700px;
+    }
+    .top-cont{
+        margin-left: 120px;
+        width:400px;
+        
+    }
+  }
+
+  @media screen and (max-width:917px) {
+    .boxer{
+        min-width: 200px;
+        width: 600px;
+    }
+    .top{
+        width: 400px;
+        margin-right: 110px;
+    }
+    .top-cont{
+        margin-left: 0px;
+    }
+    .top-yr{
+        font-size: 50px;
+        font-family: "Fascinate Inline";
+        font-weight: 400;
+        color: rgb(94, 92, 92);
+    }
+    .top-mon{
+        font-size: 58px;
+        text-align: center;
+        font-family: "Oswald";
+        font-weight: 400;
+        color: #06570f;
+    }
+  }
+
+
+  @media screen and (max-width:800px) {
+    .boxer{
+        min-width: 200px;
+        width: 600px;
+        min-height: 400px;
+    }
+    .dayshere p{
+        font-size: 20px;
+        font-family: 'Sofadi One';
+        font-weight: 400;
+        padding: 10px;
+
+    }
+    .day,
+    .empty{
+        padding: 5px;
+        text-align: center;
+        border: 1px solid rgb(87, 87, 87);
+        cursor: pointer;
+        border-radius: 10px;
+
+    }
+        
+
+  }
+
+
+  @media screen and (max-width:700px) {
+    .boxer{
+        min-width: 200px;
+        width: 500px;
+    }
+    .top-yr{
+        font-size: 40px;
+    }
+    .top-mon{
+        font-size: 48px;
+    }
+    
+        
+
+  }
+
+  
+
+  @media screen and (max-width:580px) {
+    .boxer{
+        min-width: 200px;
+        width: 400px;
+        min-height: 350px;
+    }
+    .top-yr{
+        font-size: 35px;
+    }
+    .top-mon{
+        font-size: 40px;
+    }
+    .top{
+        width: 400px;
+        margin-right: 0px;
+    }
+    .top-cont{
+        margin-left: 0px;
+    }
+    .dayshere p{
+        font-size: 17px;
+        font-family: 'Sofadi One';
+        font-weight: 400;
+        padding: 5px;
+    }
+    .dayshere{
+        gap: 10px;
+    }
+    .calen::before{
+        height: 250px;
+        width: 250px;
+        left: 0px;
+        bottom: 0px;
+    }
+      .calen::after{
+        height: 250px;
+        width: 250px;
+        top: 40px;
+    }
+
+  }
+
+  @media screen and (max-width:450px) {
+    .boxer{
+        min-width: 200px;
+        width: 350px;
+        min-height: 350px;
+        background: rgba(182, 215, 182, 0.628);
+        background: linear-gradient(22deg, rgba(182, 215, 182, 0.671) 49%, rgba(140, 214, 161, 0.607) 100%);
+    }
+    .top{
+        width: 200px;
+        margin-right: 130px;
+    }
+
+    .dayshere p{
+        font-size: 17px;
+        font-family: 'Sofadi One';
+        font-weight: 400;
+        padding: 5px;
+    }
+    .dayshere{
+        gap: 5px;
+    }
+    .calen::before{
+        height: 250px;
+        width: 250px;
+        left: 0px;
+        bottom: 0px;
+    }
+      .calen::after{
+        height: 250px;
+        width: 250px;
+        top: 120px;
+    }
+    .dayshere p{
+        font-size: 15px;
+        
+    }
+    .day{
+        font-size: 13px;
+        font-weight: 600;
+
+    }
+    .inp select{
+        height: 25px;
+        width: 100px;
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    .dayshere{
+        margin-top: 10px;
+    }
+    
+    .back-btn{
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+    }
+  }
+
+
+
+  @media screen and (max-width:350px) {
+    .boxer{
+        width: 300px;
+
+    
+    }
+    .dayshere p{
+        font-size: 13px;
+        
+    }
+    .top-yr{
+        font-size: 30px;
+    }
+    .top-mon{
+        font-size: 35px;
+    }
+    .top{
+        width: 200px;
+        margin-right: 80px;
+    }
+
+  }
+
+  @media screen and (max-width:300px) {
+    .boxer{
+        width: 270px;
+        min-height: 300px;
+
+    }
+    .day{
+        font-size: 12px;
+        
+    }
+    .top{
+        width: 200px;
+        margin-right: 50px;
+    }
+    .inp select{
+        height: 20px;
+        width: 80px;
+        border-radius: 5px;
+    }
+    .day,
+    .empty{
+        padding: 3px;
+        
+        border-radius: 5px;
+
+    }
+    .dayshere p{
+        font-size: 12px;
+        padding: 3px;
+    }
+    .calen::after{
+        height: 200px;
+        width: 200px;
+        left: 80px;
+        top: 150px;
+    }
+    .calen::before{
+        display: none;
+    }
+
+  }
