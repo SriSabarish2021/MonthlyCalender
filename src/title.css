@@ -98,7 +98,7 @@
     content: '';
     height: 500px;
     width: 480px;
-    background-image: url('images/nature.png');
+    background-image: url('/images/nature.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-size:500px;
@@ -110,7 +110,7 @@
     content: '';
     height: 500px;
     width: 480px;
-    background-image: url('images/nature.png');
+    background-image: url('/images/nature.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-size:500px;
@@ -421,7 +421,7 @@
     .home::before{
         height:400px;
         width: 400px;
-        background-image: url('images/leaf.png');
+        background-image: url('/images/leaf.png');
         background-size:400px;
         left: 0px;
         top: 90px;
@@ -445,7 +445,6 @@
     .home::before{
         height:325px;
         width: 325px;
-        background-image: url('images/leaf.png');
         background-size:325px;
         left: 10px;
         top: 130px;
@@ -470,7 +469,6 @@
     .home::before{
         height:290px;
         width: 290px;
-        background-image: url('images/leaf.png');
         background-size:290px;
         left: 10px;
         top: 130px;
