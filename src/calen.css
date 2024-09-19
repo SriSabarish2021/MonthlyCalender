@@ -151,8 +151,6 @@
     border-radius: 5px;
     border-bottom: none;
 }
-
-
 .day,
 .empty{
     padding: 10px;
@@ -160,7 +158,6 @@
     border: 1px solid rgb(87, 87, 87);
     cursor: pointer;
     border-radius: 10px;
-
 }
 .current{
     background-color: rgb(26, 103, 38);
@@ -212,8 +209,6 @@
     font-weight: 400;
     color: #06570f;
 }
-
-
 .back-btn{
     cursor: pointer;
     display: flex;
@@ -237,6 +232,7 @@
     background-color: #7ead77;
     color: rgb(0, 0, 0);
 }
+                                         /* MEDIA QUERRY */
 
 @media screen and (max-width:1024px) {
     .boxer{
@@ -245,8 +241,7 @@
     }
     .top-cont{
         margin-left: 120px;
-        width:400px;
-        
+        width:400px;     
     }
   }
 
@@ -276,9 +271,7 @@
         color: #06570f;
     }
   }
-
-
-  @media screen and (max-width:800px) {
+@media screen and (max-width:800px) {
     .boxer{
         min-width: 200px;
         width: 600px;
@@ -289,7 +282,6 @@
         font-family: 'Sofadi One';
         font-weight: 400;
         padding: 10px;
-
     }
     .day,
     .empty{
@@ -298,14 +290,9 @@
         border: 1px solid rgb(87, 87, 87);
         cursor: pointer;
         border-radius: 10px;
-
     }
-        
-
-  }
-
-
-  @media screen and (max-width:700px) {
+}
+@media screen and (max-width:700px) {
     .boxer{
         min-width: 200px;
         width: 500px;
@@ -316,14 +303,8 @@
     .top-mon{
         font-size: 48px;
     }
-    
-        
-
-  }
-
-  
-
-  @media screen and (max-width:580px) {
+}
+    @media screen and (max-width:580px) {
     .boxer{
         min-width: 200px;
         width: 400px;
@@ -357,15 +338,13 @@
         left: 0px;
         bottom: 0px;
     }
-      .calen::after{
+        .calen::after{
         height: 250px;
         width: 250px;
         top: 40px;
     }
-
-  }
-
-  @media screen and (max-width:450px) {
+}
+@media screen and (max-width:450px) {
     .boxer{
         min-width: 200px;
         width: 350px;
@@ -377,7 +356,6 @@
         width: 200px;
         margin-right: 130px;
     }
-
     .dayshere p{
         font-size: 17px;
         font-family: 'Sofadi One';
@@ -393,19 +371,17 @@
         left: 0px;
         bottom: 0px;
     }
-      .calen::after{
+        .calen::after{
         height: 250px;
         width: 250px;
         top: 120px;
     }
     .dayshere p{
-        font-size: 15px;
-        
+        font-size: 15px;   
     }
     .day{
         font-size: 13px;
         font-weight: 600;
-
     }
     .inp select{
         height: 25px;
@@ -416,21 +392,15 @@
     .dayshere{
         margin-top: 10px;
     }
-    
     .back-btn{
         height: 30px;
         width: 30px;
         font-size: 20px;
     }
-  }
-
-
-
-  @media screen and (max-width:350px) {
+}
+@media screen and (max-width:350px) {
     .boxer{
         width: 300px;
-
-    
     }
     .dayshere p{
         font-size: 13px;
@@ -446,10 +416,8 @@
         width: 200px;
         margin-right: 80px;
     }
-
-  }
-
-  @media screen and (max-width:300px) {
+}
+@media screen and (max-width:300px) {
     .boxer{
         width: 270px;
         min-height: 300px;
@@ -488,5 +456,4 @@
     .calen::before{
         display: none;
     }
-
-  }
+}

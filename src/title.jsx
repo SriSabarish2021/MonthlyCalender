@@ -3,8 +3,6 @@ import { FaArrowRightToBracket } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 
 const Title = () => {
-    
-
     let curdate=new Date();
     const navigate=useNavigate()
   const calenderpage=()=>{
